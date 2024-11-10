@@ -123,6 +123,10 @@ class Api {
       .then((data) => {
         this.setToken(data.token);
         localStorage.setItem('jwt', data.token)
+
+        // Устанавливаем куку с токеном
+        document.cookie = `token=${data.token}; path=/; max-age=${24 * 60 * 60}; SameSite=Lax`;
+
         return data;
       })
     }
