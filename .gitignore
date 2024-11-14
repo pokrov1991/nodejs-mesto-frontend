@@ -8,6 +8,7 @@ node_modules
 
 # Environment variables
 .env
+.env.deploy
 
 # Optional npm cache directory
 .npm
@@ -19,3 +20,4 @@ node_modules
 
 # Typescript build
 dist
+build
