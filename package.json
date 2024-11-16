@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "deploy-build": "scp -Cr ./build/* pokrov1991@51.250.82.246:/home/pokrov1991/frontend",
     "deploy-setup": "pm2 deploy ecosystem.config.js production setup",
     "deploy": "pm2 deploy ecosystem.config.js production"
   },
